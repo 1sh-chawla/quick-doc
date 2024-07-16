@@ -24,7 +24,6 @@ function Header() {
                     >
                         <p className="navEle">{
                             copied ? 'Link Copied!' : 'Share'
-                            
                         }</p>
                     </div>
                 </div>        

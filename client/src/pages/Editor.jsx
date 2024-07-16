@@ -53,7 +53,7 @@ function Editor() {
     }, []);
 
     useEffect(() => {
-        const socketServer = io('http://localhost:9000');
+        const socketServer = io('https://quick-doc-fdml.onrender.com');
         setSocket(socketServer);
         return () => {
             socketServer.disconnect();
