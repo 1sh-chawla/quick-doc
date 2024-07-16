@@ -9,7 +9,7 @@ dotenv.config();
 URL = process.env.MONGO_URI;
 Connection(URL);
 
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 const httpServer = createServer();
 const io = new Server(httpServer, {
     cors: {
